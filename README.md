@@ -7,8 +7,9 @@ Application React/Vite en JavaScript, avec Tailwind CSS.
 - Aucun serveur applicatif.
 - Aucune base de données distante.
 - Les participations sont stockées dans `localStorage` sur chaque tablette.
-- L'espace administrateur permet de consulter les participations, d'exporter un CSV et de supprimer les données après export.
-- Le prix d'identification est fixé à `15 000 FCFA` par animal dans `src/App.jsx`.
+- L'espace administrateur permet de consulter les participations, filtrer les résultats, gérer les lots, régler les paramètres bétail, exporter un CSV et supprimer les données après export.
+- Le prix d'identification par défaut est fixé à `15 000 FCFA` par animal et peut être ajusté dans l'onglet `Paramètres bétail`.
+- Les lots et paramètres bétail sont stockés dans `localStorage`.
 
 ## Installation
 
@@ -41,5 +42,11 @@ Ces paramètres sont aussi déclarés dans `vercel.json`.
 ## Administration
 
 Code admin par défaut : `2026`.
+
+Onglets disponibles :
+
+- Participations
+- Gestion des lots
+- Paramètres bétail
 
 Les données restent uniquement sur la tablette utilisée. Il faut exporter le CSV depuis chaque tablette avant de supprimer ses données locales.
